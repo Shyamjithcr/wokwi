@@ -1,0 +1,15 @@
+void setup() {
+  // Set LED pins as outputs
+  for (int i = 7; i <=13; i++) {
+    pinMode(i, OUTPUT);
+  }
+}
+
+void loop() {
+  // Blink each LED in sequence
+  for (int i = 7; i <=13; i++) {
+    digitalWrite(i, HIGH); // Turn on the current LED
+    delay(100); // Wait for 0.5 second
+    digitalWrite(i, LOW); // Turn off the current LED
+  }
+}
